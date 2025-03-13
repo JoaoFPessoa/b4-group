@@ -1,21 +1,38 @@
+/* styles/globals.css */
+
+/* Import Tailwind's default styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Custom global styles */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --primary-color: #022069;
+  --secondary-color: #093694;
+  --accent-color: #dfb955;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Mulish", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
 }
+
+/* Global styles for headings */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Add other global styles as needed */
