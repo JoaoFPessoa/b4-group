@@ -33,7 +33,7 @@ export default function Portoflio() {
               value="corporate"
               className="rounded-full data-[state=active]:bg-[#022069] data-[state=active]:text-white data-[state=inactive]:text-[#93B1BD]"
             >
-              Corporativos
+              Eventos gerais
             </TabsTrigger>
             <TabsTrigger
               value="weddings"
@@ -45,7 +45,7 @@ export default function Portoflio() {
               value="special"
               className="rounded-full data-[state=active]:bg-[#022069] data-[state=active]:text-white data-[state=inactive]:text-[#93B1BD]"
             >
-              Eventos especiais
+              Outros
             </TabsTrigger>
           </TabsList>
           <TabsContent value="all" className="mt-0">
