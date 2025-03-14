@@ -1,10 +1,6 @@
-import {
-  PartyPopper,
-  SnowflakeIcon as Confetti,
-  Heart,
-  Gift,
-} from "lucide-react";
+import { PartyPopper } from "lucide-react";
 import { Card, CardContent } from "../ui/card";
+import Image from "next/image";
 
 export default function Services() {
   return (
@@ -12,7 +8,16 @@ export default function Services() {
       id="services"
       className="py-20 bg-gradient-to-b from-white to-gray-50 relative"
     >
-      <div className="container relative">
+      {/* Lemons Image */}
+      <div className=" absolute bottom-12 -right-12 -z-10 xl:z-10 opacity-35">
+        <Image
+          src={"/services/lemons.png"}
+          width={500}
+          height={500}
+          alt="Lemons"
+        />
+      </div>
+      <div className="container  max-w-6xl relative">
         <div className="text-center mb-16">
           <div className="inline-flex items-center justify-center gap-2 mb-3">
             <span className="fancy-font text-[#DFB955] text-3xl">
@@ -31,10 +36,16 @@ export default function Services() {
 
         <div className="grid md:grid-cols-3 gap-8 text-[#93B1BD]">
           <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 group hover:-translate-y-2 bg-white rounded-xl overflow-hidden">
-            <div className="h-3 w-full bg-gradient-to-r from-[#022069] to-[#093694]"></div>
+            <div className="h-3 w-full bg-[url('/services/border.png')] bg-cover bg-no-repeat bg-bottom"></div>
+
             <CardContent className="p-6 pt-8 ">
               <div className="h-16 w-16 rounded-full bg-[#022069]/10 flex items-center justify-center mb-4 group-hover:bg-[#022069]/20 transition-colors">
-                <Confetti className="h-8 w-8 text-[#022069]" />
+                <Image
+                  alt=""
+                  src={"/services/icons/icon01.png"}
+                  width={45}
+                  height={45}
+                />
               </div>
               <h3 className="text-xl font-bold text-[#022069] mb-2">
                 Eventos Gerais
@@ -87,10 +98,15 @@ export default function Services() {
           </Card>
 
           <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 group hover:-translate-y-2 bg-white rounded-xl overflow-hidden">
-            <div className="h-3 w-full bg-gradient-to-r from-[#DFB955] to-[#C19636]"></div>
+            <div className="h-3 w-full bg-[url('/services/border.png')] bg-cover bg-no-repeat bg-top"></div>
             <CardContent className="p-6 pt-8">
               <div className="h-16 w-16 rounded-full bg-[#022069]/10 flex items-center justify-center mb-4 group-hover:bg-[#022069]/20 transition-colors">
-                <Heart className="h-8 w-8 text-[#022069]" />
+                <Image
+                  alt=""
+                  src={"/services/icons/icon02.png"}
+                  width={45}
+                  height={45}
+                />{" "}
               </div>
               <h3 className="text-xl font-bold text-[#022069] mb-2">
                 Pré Wedding
@@ -137,10 +153,15 @@ export default function Services() {
           </Card>
 
           <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 group hover:-translate-y-2 bg-white rounded-xl overflow-hidden">
-            <div className="h-3 w-full bg-gradient-to-r from-[#93B1BD] to-[#DACE8E]"></div>
+            <div className="h-3 w-full bg-[url('/services/border.png')] bg-cover bg-no-repeat bg-center"></div>
             <CardContent className="p-6 pt-8">
               <div className="h-16 w-16 rounded-full bg-[#022069]/10 flex items-center justify-center mb-4 group-hover:bg-[#022069]/20 transition-colors">
-                <Gift className="h-8 w-8 text-[#022069]" />
+                <Image
+                  alt=""
+                  src={"/services/icons/icon03.png"}
+                  width={45}
+                  height={45}
+                />{" "}
               </div>
               <h3 className="text-xl font-bold text-[#022069] mb-2">
                 Pré Mamãe
@@ -174,10 +195,15 @@ export default function Services() {
           </Card>
 
           <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 group hover:-translate-y-2 bg-white rounded-xl overflow-hidden">
-            <div className="h-3 w-full bg-gradient-to-r from-[#93B1BD] to-[#DACE8E]"></div>
+            <div className="h-3 w-full bg-[url('/services/border.png')] bg-cover bg-no-repeat bg-top"></div>
             <CardContent className="p-6 pt-8">
               <div className="h-16 w-16 rounded-full bg-[#022069]/10 flex items-center justify-center mb-4 group-hover:bg-[#022069]/20 transition-colors">
-                <Gift className="h-8 w-8 text-[#022069]" />
+                <Image
+                  alt=""
+                  src={"/services/icons/icon04.png"}
+                  width={45}
+                  height={45}
+                />{" "}
               </div>
               <h3 className="text-xl font-bold text-[#022069] mb-2">
                 Casa & Cheers
@@ -211,10 +237,15 @@ export default function Services() {
           </Card>
 
           <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 group hover:-translate-y-2 bg-white rounded-xl overflow-hidden">
-            <div className="h-3 w-full bg-gradient-to-r from-[#93B1BD] to-[#DACE8E]"></div>
+            <div className="h-3 w-full bg-[url('/services/border.png')] bg-cover bg-no-repeat bg-bottom"></div>
             <CardContent className="p-6 pt-8">
               <div className="h-16 w-16 rounded-full bg-[#022069]/10 flex items-center justify-center mb-4 group-hover:bg-[#022069]/20 transition-colors">
-                <Gift className="h-8 w-8 text-[#022069]" />
+                <Image
+                  alt=""
+                  src={"/services/icons/icon05.png"}
+                  width={45}
+                  height={45}
+                />{" "}
               </div>
               <h3 className="text-xl font-bold text-[#022069] mb-2">
                 Viagens de família ou amigos
@@ -227,10 +258,15 @@ export default function Services() {
             </CardContent>
           </Card>
           <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 group hover:-translate-y-2 bg-white rounded-xl overflow-hidden">
-            <div className="h-3 w-full bg-gradient-to-r from-[#93B1BD] to-[#DACE8E]"></div>
+            <div className="h-3 w-full bg-[url('/services/border.png')] bg-cover bg-no-repeat bg-center"></div>
             <CardContent className="p-6 pt-8">
               <div className="h-16 w-16 rounded-full bg-[#022069]/10 flex items-center justify-center mb-4 group-hover:bg-[#022069]/20 transition-colors">
-                <Gift className="h-8 w-8 text-[#022069]" />
+                <Image
+                  alt=""
+                  src={"/services/icons/icon06.png"}
+                  width={45}
+                  height={45}
+                />{" "}
               </div>
               <h3 className="text-xl font-bold text-[#022069] mb-2">
                 Coorporativos com B4 Company
