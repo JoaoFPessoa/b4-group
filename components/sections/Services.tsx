@@ -155,7 +155,7 @@ export default function Services() {
               <div className="h-16 w-16 rounded-full bg-[#022069]/10 flex items-center justify-center mb-4 group-hover:bg-[#022069]/20 transition-colors">
                 <Image
                   alt=""
-                  src={"/services/icons/icon03.png"}
+                  src={"/services/icons/icon04.png"}
                   width={45}
                   height={45}
                 />{" "}
@@ -197,7 +197,7 @@ export default function Services() {
               <div className="h-16 w-16 rounded-full bg-[#022069]/10 flex items-center justify-center mb-4 group-hover:bg-[#022069]/20 transition-colors">
                 <Image
                   alt=""
-                  src={"/services/icons/icon04.png"}
+                  src={"/services/icons/icon03.png"}
                   width={45}
                   height={45}
                 />{" "}

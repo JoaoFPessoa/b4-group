@@ -1,4 +1,3 @@
-import { Quote } from "lucide-react";
 import Image from "next/image";
 
 export default function About() {
@@ -35,13 +34,12 @@ export default function About() {
               lembrado tanto quanto o próprio casamento.
             </p>
             <h3 className=" text-[#022069]  mb-2 mt-12">
-              <Quote className="transform rotate-180" fill="#022069" />
-              Nosso objetivo é proporcionar aos nossos clientes uma experiência
-              cheia de amor e atenção, cuidando de cada detalhe para tornar tudo
-              mais leve e especial. Nosso trabalho vai além de simplesmente
-              realizar um evento; é sobre criar um ambiente acolhedor, alegre e
-              personalizado, garantindo que cada momento se torne uma memória
-              inesquecível.”
+              &quot;Nosso objetivo é proporcionar aos nossos clientes uma
+              experiência cheia de amor e atenção, cuidando de cada detalhe para
+              tornar tudo mais leve e especial. Nosso trabalho vai além de
+              simplesmente realizar um evento; é sobre criar um ambiente
+              acolhedor, alegre e personalizado, garantindo que cada momento se
+              torne uma memória inesquecível.&quot;
             </h3>
             <p className="text-primary font-bold">
               Tatiana Judice, fundadora da B4
