@@ -6,13 +6,11 @@ export default function Portoflio() {
   return (
     <section
       id="portfolio"
-      className="py-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden"
+      className="pb-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden"
     >
-      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#DFB955] via-[#93B1BD] to-[#022069]"></div>
-      <div className="absolute top-20 right-20 w-40 h-40 rounded-full bg-[#022069]/5 blur-3xl"></div>
-      <div className="absolute bottom-20 left-20 w-40 h-40 rounded-full bg-[#DFB955]/5 blur-3xl"></div>
+      <div className="h-6 w-full bg-[url('/services/border.png')] bg-cover bg-no-repeat bg-bottom"></div>
 
-      <div className="container relative">
+      <div className="container relative mt-24">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-[#022069] mt-2">
             Nossos eventos favoritos!

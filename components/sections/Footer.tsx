@@ -1,6 +1,7 @@
 import { PartyPopper, Snowflake, Sparkles } from "lucide-react";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -15,15 +16,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="relative">
-                <span className="fancy-font text-3xl font-bold text-white">
-                  Stellar
-                </span>
-                <PartyPopper className="absolute -top-3 -right-6 h-5 w-5 text-[#DFB955]" />
-              </div>
-              <span className="text-xl font-semibold text-[#DFB955]">
-                Eventos
-              </span>
+              <Image
+                src="/logo.png"
+                alt="B4 Logo"
+                width={150}
+                height={150}
+                className="object-contain mb-2 max-h-[95%]"
+              />
             </div>
             <p className="text-sm text-[#93B1BD] max-w-xs">
               Não planejamos apenas eventos, criamos memórias! Seu parceiro

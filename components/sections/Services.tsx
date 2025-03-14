@@ -1,4 +1,3 @@
-import { PartyPopper } from "lucide-react";
 import { Card, CardContent } from "../ui/card";
 import Image from "next/image";
 
@@ -16,12 +15,6 @@ export default function Services() {
       </div>
       <div className="container  max-w-8xl relative">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center gap-2 mb-3">
-            <span className="fancy-font text-[#DFB955] text-3xl">
-              Nosso menu de festas
-            </span>
-            <PartyPopper className="h-5 w-5 text-[#DFB955]" />
-          </div>
           <h2 className="text-3xl md:text-4xl font-bold text-[#022069] mt-2">
             Fazemos <span className="fancy-font">toda</span> ocasião especial!
           </h2>

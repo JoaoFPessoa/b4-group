@@ -19,7 +19,7 @@ export default function Contact() {
       <div className="container relative text-primary">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-[#022069] mt-2">
-            Vamos conversar sobre sua festa!
+            Vamos transformar o seu sonho em um evento memorável?
           </h2>
           <p className=" mt-4 max-w-2xl mx-auto">
             Tem dúvidas ou está pronto para começar a planejar seu próximo
@@ -276,8 +276,8 @@ export default function Contact() {
             </div>
 
             <div className="relative mt-8 p-6 bg-gradient-to-r from-[#022069]/5 to-[#DFB955]/5 rounded-2xl">
-              <div className="absolute -top-4 -right-4 p-3 bg-white rounded-full shadow-lg">
-                <PartyPopper className="h-6 w-6 text-[#DFB955]" />
+              <div className="absolute -top-4 -right-4 p-3 bg-accent-light rounded-full shadow-lg">
+                <PartyPopper className="h-6 w-6  text-primary" />
               </div>
               <h4 className="font-bold text-[#022069] mb-2">Fun Fact!</h4>
               <p className="text-sm ">
