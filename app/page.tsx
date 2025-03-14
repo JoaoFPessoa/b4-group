@@ -11,7 +11,7 @@ import Footer from "@/components/sections/Footer";
 
 export default function LandingPage() {
   return (
-    <div className="flex min-h-screen flex-col overflow-hidden">
+    <div className="flex min-h-screen bg-white  flex-col overflow-hidden">
       {/* Custom fonts */}
       <style jsx global>{`
         @import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");

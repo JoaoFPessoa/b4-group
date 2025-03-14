@@ -1,19 +1,21 @@
-import { PartyPopper } from "lucide-react";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import Image from "next/image";
 
 function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur text-black">
       <div className="container flex h-20 items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="relative">
-            <span className="fancy-font text-3xl font-bold text-[#022069]">
-              B4
-            </span>
-            <PartyPopper className="absolute -top-3 -right-6 h-5 w-5 text-[#DFB955]" />
+          <div className="relative flex items-center justify-center">
+            <Image
+              src="/logo.png"
+              alt="B4 Logo"
+              width={150}
+              height={150}
+              className="object-contain mb-2 max-h-[95%]"
+            />
           </div>
-          <span className="text-xl font-semibold text-[#022069]">Eventos</span>
         </div>
         <nav className="hidden md:flex gap-6">
           <Link

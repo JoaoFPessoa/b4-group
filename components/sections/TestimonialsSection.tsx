@@ -1,11 +1,14 @@
-import { PartyPopper } from "lucide-react";
 import { Card, CardContent } from "../ui/card";
 
 export default function TestimonialsSection() {
   return (
     <section
       id="testimonials"
-      className="py-20 bg-gradient-to-br from-[#022069] via-[#093694] to-[#022069] relative overflow-hidden"
+      className="py-20 relative overflow-hidden"
+      style={{
+        background: "linear-gradient(to right, white 50%, var(--primary) 50%)",
+        backgroundSize: "120px 100%", // Define a largura das listras
+      }}
     >
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-10 left-10 w-20 h-20 rounded-full bg-[#DFB955]/10 animate-pulse"></div>
@@ -13,16 +16,10 @@ export default function TestimonialsSection() {
         <div className="absolute top-1/4 right-1/4 w-16 h-16 rounded-full bg-[#DACE8E]/10 animate-pulse"></div>
       </div>
 
-      <div className="container relative z-10">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2">
-            <span className="fancy-font text-[#DFB955] text-3xl">
-              Gente feliz!
-            </span>
-            <PartyPopper className="h-5 w-5 text-[#DFB955]" />
-          </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mt-2">
-            O que Nosso Pessoal de Festa Diz
+      <div className="container flex flex-col items-center relative z-10">
+        <div className="text-center bg-white w-fit p-12 mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mt-2">
+            Feedback de clientes
           </h2>
           <p className="text-[#93B1BD] mt-4 max-w-2xl mx-auto">
             Não acredite apenas na nossa palavra! Veja o que nossos clientes têm
@@ -71,10 +68,10 @@ export default function TestimonialsSection() {
           ].map((testimonial, index) => (
             <Card
               key={index}
-              className="bg-white/10 backdrop-blur-sm border-none rounded-xl overflow-hidden group hover:-translate-y-2 transition-all duration-300"
+              className="backdrop-blur-sm bg-white border-none rounded-xl overflow-hidden group hover:-translate-y-2 transition-all duration-300"
             >
               <div className="h-2 w-full bg-gradient-to-r from-[#DFB955] to-[#C19636]"></div>
-              <CardContent className="p-6">
+              <CardContent className="p-6 text-primary">
                 <div className="flex flex-col h-full">
                   <div className="mb-4">
                     {[1, 2, 3, 4, 5].map((star) => (
@@ -91,7 +88,7 @@ export default function TestimonialsSection() {
                       </svg>
                     ))}
                   </div>
-                  <p className="text-white/90 italic  flex-grow">
+                  <p className="italic flex-grow">
                     &quot;{testimonial.quote}&quot;
                   </p>
                   <div className="mt-6 flex items-center">
@@ -101,12 +98,7 @@ export default function TestimonialsSection() {
                       </span>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-white">
-                        {testimonial.name}
-                      </h4>
-                      <p className="text-sm text-[#93B1BD]">
-                        {testimonial.role}
-                      </p>
+                      <h4 className="font-semibold ">{testimonial.name}</h4>
                     </div>
                   </div>
                 </div>

@@ -10,42 +10,39 @@ import { Button } from "../ui/button";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-white relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#DFB955] via-[#022069] to-[#93B1BD]"></div>
-      <div className="absolute -top-20 -left-20 w-40 h-40 rounded-full bg-[#022069]/5 blur-3xl"></div>
-      <div className="absolute -bottom-20 -right-20 w-40 h-40 rounded-full bg-[#DFB955]/5 blur-3xl"></div>
+    <section
+      id="contact"
+      className="py-20 bg-accent-light bg-white relative overflow-hidden"
+    >
+      <div className="absolute top-0 left-0 w-full h-1 bg-[#DFB955] "></div>
 
-      <div className="container relative">
+      <div className="container relative text-primary">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2">
-            <span className="fancy-font text-[#DFB955] text-3xl">Diga Oi!</span>
-            <PartyPopper className="h-5 w-5 text-[#DFB955]" />
-          </div>
           <h2 className="text-3xl md:text-4xl font-bold text-[#022069] mt-2">
             Vamos conversar sobre sua festa!
           </h2>
-          <p className="text-[#93B1BD] mt-4 max-w-2xl mx-auto">
+          <p className=" mt-4 max-w-2xl mx-auto">
             Tem dúvidas ou está pronto para começar a planejar seu próximo
             evento incrível? Envie uma mensagem e nós responderemos mais rápido
             do que você pode dizer &quot;HORA DA FESTA!&quot;
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="text-primary grid md:grid-cols-2 gap-12">
           <div>
             <form className="space-y-6 text-[#93B1BD]">
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <label
                     htmlFor="first-name"
-                    className="text-sm font-medium text-[#022069] flex items-center gap-1"
+                    className="text-sm font-medium text-primary  flex items-center gap-1"
                   >
                     Nome
-                    <span className="text-[#DFB955]">*</span>
+                    <span className="">*</span>
                   </label>
                   <input
                     id="first-name"
-                    className="flex h-12 w-full rounded-full border border-input bg-background px-4 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DFB955] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    className="flex h-12 w-full rounded-full border border-primary bg-background px-4 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DFB955] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                     placeholder="John"
                   />
                 </div>
@@ -55,11 +52,11 @@ export default function Contact() {
                     className="text-sm font-medium text-[#022069] flex items-center gap-1"
                   >
                     Sobrenome
-                    <span className="text-[#DFB955]">*</span>
+                    <span className="">*</span>
                   </label>
                   <input
                     id="last-name"
-                    className="flex h-12 w-full rounded-full border border-input bg-background px-4 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DFB955] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    className="flex h-12 w-full rounded-full border border-primary bg-background px-4 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DFB955] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                     placeholder="Doe"
                   />
                 </div>
@@ -76,7 +73,7 @@ export default function Contact() {
                 <input
                   id="email"
                   type="email"
-                  className="flex h-12 w-full rounded-full border border-input bg-background px-4 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DFB955] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  className="flex h-12 text-primary w-full rounded-full border border-primary bg-background px-4 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DFB955] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                   placeholder="john.doe@example.com"
                 />
               </div>
@@ -91,15 +88,17 @@ export default function Contact() {
                 </label>
                 <select
                   id="event-type"
-                  className="flex h-12 w-full rounded-full border border-input bg-background px-4 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DFB955] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  className="flex h-12 w-full text-primary rounded-full border border-primary bg-accent-light px-4 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DFB955] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                 >
-                  <option value="" disabled>
+                  <option className="" value="" disabled>
                     Selecione seu tipo de festa
                   </option>
-                  <option value="corporate">Corporate Celebration</option>
-                  <option value="wedding">Wedding Extravaganza</option>
-                  <option value="birthday">Birthday Bash</option>
-                  <option value="other">Other Fun Event</option>
+                  <option value="geral_events">Eventos gerais</option>
+                  <option value="pre-wedding">Pré Wedding</option>
+                  <option value="pre-mommy">Pré Mamãe</option>
+                  <option value="house">Casa & Cheers</option>
+                  <option value="trip">Viagens de família ou amigos</option>
+                  <option value="coorporate">Coorporativos</option>
                 </select>
               </div>
 
@@ -113,7 +112,7 @@ export default function Contact() {
                 </label>
                 <textarea
                   id="message"
-                  className="flex min-h-[120px] w-full rounded-2xl border border-input bg-background px-4 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DFB955] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  className="flex min-h-[120px] w-full rounded-2xl border border-primary bg-background px-4 py-2 text-sm ring-offset-background placeholder:text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DFB955] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                   placeholder="I'm planning a..."
                 ></textarea>
               </div>
@@ -141,7 +140,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-[#022069]">New York</h4>
-                    <p className="text-sm text-[#93B1BD]">
+                    <p className="text-sm ">
                       123 Party Avenue, New York, NY 10160
                     </p>
                   </div>
@@ -152,7 +151,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-[#022069]">London</h4>
-                    <p className="text-sm text-[#93B1BD]">
+                    <p className="text-sm ">
                       456 Celebration Street, London, W1C 1AP
                     </p>
                   </div>
@@ -172,7 +171,7 @@ export default function Contact() {
                   </div>
                   <a
                     href="mailto:hello@stellarevents.com"
-                    className="text-[#93B1BD] hover:text-[#022069] transition-colors"
+                    className=" hover:text-[#022069] transition-colors"
                   >
                     hello@stellarevents.com
                   </a>
@@ -183,7 +182,7 @@ export default function Contact() {
                   </div>
                   <a
                     href="tel:+1234567890"
-                    className="text-[#93B1BD] hover:text-[#022069] transition-colors"
+                    className=" hover:text-[#022069] transition-colors"
                   >
                     +1 (234) PARTY-TIME
                   </a>
@@ -281,7 +280,7 @@ export default function Contact() {
                 <PartyPopper className="h-6 w-6 text-[#DFB955]" />
               </div>
               <h4 className="font-bold text-[#022069] mb-2">Fun Fact!</h4>
-              <p className="text-sm text-[#93B1BD]">
+              <p className="text-sm ">
                 Você sabia? A pessoa média passa mais de 2.000 horas de sua vida
                 em festas e celebrações! Vamos fazer essas horas valerem a pena
                 com experiências inesquecíveis!

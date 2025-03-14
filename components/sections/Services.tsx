@@ -4,10 +4,7 @@ import Image from "next/image";
 
 export default function Services() {
   return (
-    <section
-      id="services"
-      className="py-20 bg-gradient-to-b from-white to-gray-50 relative"
-    >
+    <section id="services" className="py-20  relative">
       {/* Lemons Image */}
       <div className=" absolute bottom-12 -right-12 -z-10 xl:z-10 opacity-35">
         <Image
@@ -17,7 +14,7 @@ export default function Services() {
           alt="Lemons"
         />
       </div>
-      <div className="container  max-w-6xl relative">
+      <div className="container  max-w-8xl relative">
         <div className="text-center mb-16">
           <div className="inline-flex items-center justify-center gap-2 mb-3">
             <span className="fancy-font text-[#DFB955] text-3xl">

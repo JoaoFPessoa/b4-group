@@ -1,26 +1,47 @@
 import { Sparkles } from "lucide-react";
 import Image from "next/image";
 import { Button } from "../ui/button";
+import { useState, useEffect } from "react";
 
 export default function Hero() {
+  const [scrollY, setScrollY] = useState(0);
+
+  // Atualiza o valor do scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <section className="relative h-[85vh] overflow-hidden py-20 md:py-32">
-      {/* Background image */}
+      {/* Background image with parallax effect */}
       <div className="absolute inset-0">
-        <Image
-          src={"/banner/horizontal.png"}
-          alt="Colorful celebration with confetti and happy people"
-          fill
-          className="object-cover hidden md:block"
-          priority
-        />
-        <Image
-          src={"/banner/vertical.png"}
-          alt="Colorful celebration with confetti and happy people"
-          fill
-          className="object-cover block md:hidden"
-          priority
-        />
+        <div
+          className="absolute inset-0"
+          style={{
+            transform: `translateY(${scrollY * 0.1}px)`, // Efeito parallax
+            transition: "transform  ease-out",
+          }}
+        >
+          <Image
+            src={"/banner/horizontal.png"}
+            alt="Colorful celebration with confetti and happy people"
+            fill
+            className="object-cover hidden md:block"
+            priority
+          />
+          <Image
+            src={"/banner/vertical.png"}
+            alt="Colorful celebration with confetti and happy people"
+            fill
+            className="object-cover block md:hidden"
+            priority
+          />
+        </div>
       </div>
 
       {/* Decorative elements */}
@@ -48,7 +69,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 mt-4">
               <Button className="bg-gradient-to-r from-[#DFB955] to-[#C19636] hover:from-[#C19636] hover:to-[#DFB955] text-[#022069] font-semibold rounded-full group relative overflow-hidden">
                 <span className="relative z-10 flex items-center">
-                  Vamos planejar?
+                  Chame a gente!
                   <Sparkles className="ml-2 h-4 w-4" />
                 </span>
                 <span className="absolute inset-0 h-full w-full scale-0 rounded-full bg-white/20 transition-all duration-300 group-hover:scale-100"></span>
