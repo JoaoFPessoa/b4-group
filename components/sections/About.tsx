@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="my-24 bg-accent h-full relative overflow-hidden"
+      className="mt-24 pt-12 lg:py-0 bg-secondary h-full relative overflow-hidden"
     >
       <div className="relative h-full">
         <div className="grid md:grid-cols-[40%_60%] gap-12  items-stretch">
