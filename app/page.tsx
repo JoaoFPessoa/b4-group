@@ -8,7 +8,6 @@ import TestimonialsSection from "@/components/sections/TestimonialsSection";
 import CTA from "@/components/sections/CTA";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
-import { Star } from "lucide-react";
 
 export default function LandingPage() {
   return (

@@ -1,26 +1,32 @@
-import { PartyPopper, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import Image from "next/image";
 import { Button } from "../ui/button";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-[#022069] via-[#093694] to-[#022069] py-20 md:py-32">
-      <div className="absolute inset-0 z-10 bg-gradient-to-r from-[#022069]/95 to-[#022069]/70"></div>
+    <section className="relative h-[85vh] overflow-hidden py-20 md:py-32">
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <Image
+          src={"/banner/horizontal.png"}
+          alt="Colorful celebration with confetti and happy people"
+          fill
+          className="object-cover hidden md:block"
+          priority
+        />
+        <Image
+          src={"/banner/vertical.png"}
+          alt="Colorful celebration with confetti and happy people"
+          fill
+          className="object-cover block md:hidden"
+          priority
+        />
+      </div>
 
       {/* Decorative elements */}
       <div className="absolute top-10 left-10 w-20 h-20 rounded-full bg-[#DFB955]/20 animate-pulse"></div>
       <div className="absolute bottom-10 right-10 w-32 h-32 rounded-full bg-[#93B1BD]/20 animate-pulse"></div>
       <div className="absolute top-1/4 right-1/4 w-16 h-16 rounded-full bg-[#DACE8E]/20 animate-pulse"></div>
-
-      <div className="absolute inset-0">
-        <Image
-          src="/placeholder.svg?height=1080&width=1920"
-          alt="Colorful celebration with confetti and happy people"
-          fill
-          className="object-cover opacity-30 mix-blend-overlay"
-          priority
-        />
-      </div>
 
       <div className="container relative z-20">
         <div className="grid gap-6 md:grid-cols-2 items-center">
@@ -28,13 +34,13 @@ export default function Hero() {
             <div className="flex items-center gap-2">
               <Sparkles className="h-6 w-6 text-[#DFB955] animate-pulse" />
             </div>
-            <h1 className="text-4xl md:text-5xl  font-bold text-white leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-primary leading-tight">
               Transformamos sonhos <br />
-              <span className="fancy-font text-[#DFB955]">
+              <span className="fancy-font text-white">
                 em experiências únicas!
               </span>
             </h1>
-            <p className="text-[#93B1BD] text-lg md:text-xl max-w-md">
+            <p className="text-white text-lg md:text-xl max-w-md">
               Mais do que organizar eventos, criamos experiências únicas, cheias
               de significado e leveza. Com sensibilidade e dedicação, garantimos
               momentos autênticos e especiais.
@@ -49,15 +55,10 @@ export default function Hero() {
               </Button>
               <Button
                 variant="outline"
-                className="border-white text-white hover:bg-white/10 rounded-full"
+                className="border-white text-primary bg-white hover:bg-white/60 rounded-full"
               >
                 Veja nossos eventos
               </Button>
-            </div>
-          </div>
-          <div className="hidden md:block relative">
-            <div className="absolute -bottom-5 -right-5 p-3 bg-white rounded-full shadow-lg">
-              <PartyPopper className="h-8 w-8 text-[#DFB955]" />
             </div>
           </div>
         </div>
