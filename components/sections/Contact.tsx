@@ -12,7 +12,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-20 bg-accent-light bg-white relative overflow-hidden"
+      className="py-20 bg-accent-light relative overflow-hidden"
     >
       <div className="absolute top-0 left-0 w-full h-1 bg-[#DFB955] "></div>
 
