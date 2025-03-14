@@ -42,7 +42,7 @@ export default function Contact() {
                   </label>
                   <input
                     id="first-name"
-                    className="flex h-12 w-full rounded-full border border-primary bg-background px-4 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DFB955] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    className="flex h-12 w-full rounded-full border border-primary bg-background px-4 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-primary/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DFB955] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                     placeholder="John"
                   />
                 </div>
@@ -56,7 +56,7 @@ export default function Contact() {
                   </label>
                   <input
                     id="last-name"
-                    className="flex h-12 w-full rounded-full border border-primary bg-background px-4 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DFB955] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    className="flex h-12 w-full rounded-full border border-primary bg-background px-4 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-primary/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DFB955] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                     placeholder="Doe"
                   />
                 </div>
@@ -73,7 +73,7 @@ export default function Contact() {
                 <input
                   id="email"
                   type="email"
-                  className="flex h-12 text-primary w-full rounded-full border border-primary bg-background px-4 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DFB955] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  className="flex h-12 text-primary w-full rounded-full border border-primary bg-background px-4 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-primary/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DFB955] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                   placeholder="john.doe@example.com"
                 />
               </div>
@@ -88,7 +88,7 @@ export default function Contact() {
                 </label>
                 <select
                   id="event-type"
-                  className="flex h-12 w-full text-primary rounded-full border border-primary bg-accent-light px-4 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DFB955] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  className="flex h-12 w-full text-primary rounded-full border border-primary bg-accent-light px-4 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-primary/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DFB955] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   <option className="" value="" disabled>
                     Selecione seu tipo de festa
@@ -112,7 +112,7 @@ export default function Contact() {
                 </label>
                 <textarea
                   id="message"
-                  className="flex min-h-[120px] w-full rounded-2xl border border-primary bg-background px-4 py-2 text-sm ring-offset-background placeholder:text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DFB955] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  className="flex min-h-[120px] w-full rounded-2xl border text-primary border-primary bg-background px-4 py-2 text-sm ring-offset-background placeholder:text-primary/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DFB955] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                   placeholder="I'm planning a..."
                 ></textarea>
               </div>
