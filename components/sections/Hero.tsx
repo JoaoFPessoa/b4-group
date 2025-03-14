@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 import { useState, useEffect } from "react";
 
 const banners = [
-  { type: "image", src: "/banner/horizontal.png", duration: 4000 },
+  { type: "image", src: "/banner/horizontal.png", duration: 7000 },
   {
     type: "video",
     src: "/banner/banner-video/banner-video.mp4",
